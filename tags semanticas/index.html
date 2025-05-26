@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Atividade tags semânticas</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="content-header">
+            <a href="index.html">
+                <h1>Gifruit</h1>
+            </a>
+            <nav class="links-nav">
+                <ul>
+                    <li>
+                        <a href="cart.html"><img class="cart-icon" src="images/carrinho.png" alt="CARRRINHO"></a>
+                        <a href="#">SOBRE NÓS</a>
+                        <a href="index.html">HOME</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="menu-nav">
+        <ul>
+            <li>
+                <a href="#">Frutas</a>
+                <a href="#">Legumes</a>
+                <a href="#">Verduras</a>
+                <a href="#">Kits</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="search-bar">
+            <div class="pesquisa">
+                <div class="pesquisa-container">
+                    <form action="index.html">
+                        <input type="text" name="search" id="search" placeholder="O que você procura hoje?" />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-main">
+            <img src="images/Banner.png" alt="Imagem banner">
+        </div>
+
+        <section class="main-products">
+            <h2>Veja nossos<strong>Produtos</strong></h2>
+            <div id="products-list">
+                <article class="content-products">
+                    <div class="products-cards">
+                        <img src="./images/img-kiwi.png" alt="Imagem do Produto">
+                        <div class="card-content">
+                            <h3>Kiwi - Verde</h3>
+                            <p class="card-price">R$ 8,97 unid</p>
+                            <p class="card-description">Kiwi do tipo verde colhido direto da orta, fresquinho e docinho!
+                            </p>
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                    <div class="products-cards">
+                        <img src="./images/img-kiwi.png" alt="Imagem do Produto">
+                        <div class="card-content">
+                            <h3>Morango - Albion</h3>
+                            <p class="card-price">R$ 20,31 kg</p>
+                            <p class="card-description">Morango do tipo Albion grande e vermelhinho para enfeitar sua
+                                mesa e
+                                se saborear!</p>
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                    <div class="products-cards">
+                        <img src="./images/img-kiwi.png" alt="Imagem do Produto">
+                        <div class="card-content">
+                            <h3>Alface - Americana <br><mark>Item promocional</mark></h3>
+                            <p class="card-price">R$ 5,95 kg</p>
+                            <p class="card-description">Alface do tipo americana suculenta para te deixar ainda mais
+                                saudável e feliz!</p>
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                    <div class="products-cards">
+                        <img src="./images/img-kiwi.png" alt="Imagem do Produto">
+                        <div class="card-content">
+                            <h3>Tomate - Italiano <br><mark>Item promocional</mark></h3>
+                            <p class="card-price">R$ 7,98 kg</p>
+                            <p class="card-description">Morango do tipo Albion grande e vermelhinho para enfeitar sua
+                                mesa e
+                                se saborear!</p>
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <aside>*Todas as imagens são ilustrativas!</aside>
+    </main>
+    <footer>
+        <div class="content-footer">
+            <a href="index.html">
+                <h1>Gifruit</h1>
+            </a>
+            <address>Rua Alegra, 123 - Cidade Brasileira | 19 99999-9999</address>
+        </div>
+        <div class="services">
+            <h4>Nossos serviços</h4>
+                <nav class="links-nav-footer">
+                    <ul>
+                        <li>
+                            <a href="#">SOBRE NÓS</a>
+                            <a href="#">FALE CONOSCO</a>
+                            <a href="#products-list">NOSSOS PRODUTOS</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="products">
+            <h4>Nossos produtos</h4>
+                <nav class="links-nav-footer2">
+                    <ul>
+                        <li>
+                            <a href="#">Frutas</a>
+                            <a href="#">Legumes</a>
+                            <a href="">Verduras</a>
+                            <a href="#">Kits</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </footer>
 </body>
 </html>
