@@ -195,6 +195,7 @@ aside{
 
 .card-content button:hover {
     background-color: #47980d;
+    transition: 0.5s ease;
 }
 
 /*Footer*/
@@ -269,6 +270,7 @@ footer a:hover {
     font-size: 28px;
     margin-left: 5%;
     margin-top: 20px;
+    color: rgb(0, 67, 30);
 }
 
 .content-cart .cart-p{
