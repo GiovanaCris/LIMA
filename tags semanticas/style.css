@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /*Header*/
-header{
-    background-color: rgb(0, 67, 30);
+header {
+    background-color: #2D441D;
     height: 70px;
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.content-header h1{
+.content-header h1 {
     padding-top: 15px;
-    color: rgb(154, 211, 154);
-    margin-left: 30px;
+    color: #C2FF96;
+    font-size: 35px;
+    margin-left: 100px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.links-nav ul li{
+.links-nav ul li {
     display: flex;
     flex-direction: row-reverse;
     gap: 40px;
@@ -35,29 +36,29 @@ a{
     font-family: 'Inter', sans-serif;
 }
 
-.links-nav a{
+.links-nav a {
     color: white;
     text-decoration: none;
 }
 
-.links-nav a:hover{
-    color: rgb(154, 211, 154);
+.links-nav a:hover {
+    color: #C2FF96;
     transition: 1.0s;
 }
 
-a .cart-icon{
+a .cart-icon {
     margin-top: -3px;
     height: 30px;
 }
 
 /*Menu de navegação*/
-.menu-nav{
+.menu-nav {
     background-color: #47980d;
     height: 40px;
     width: 100%;
 }
 
-.menu-nav ul li{
+.menu-nav ul li {
     display: flex;
     gap: 40px;
     font-size: 20px;
@@ -67,30 +68,54 @@ a .cart-icon{
     font-family: 'Inter', sans-serif;
 }
 
-.menu-nav a{
+.menu-nav a {
     color: white;
     text-decoration: none;
 }
 
-.menu-nav a:hover{
-    color: rgb(154, 211, 154);
+.menu-nav a:hover {
+    color: #C2FF96;
     transition: 1.0s;
 }
 
 /*Main*/
-.pesquisa{
+.pesquisa {
     width: 100%;
     display: flex;
     color: rgb(142, 142, 142);
     justify-content: center;
     margin-top: 30px;
+
 }
 
-.pesquisa-container{
+.pesquisa-container {
     width: 30%;
 }
 
-.pesquisa input{
+.pesquisa-container form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao_pesquisa {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    background-color: #2D441D;
+    border-radius: 20px;
+}
+
+.botao_pesquisa:hover {
+    background-color: #47980d;
+    transition: 0.5s ease;
+}
+
+.pesquisa input {
     width: 100%;
     font-size: 1em;
     padding: 10px 30px;
@@ -101,18 +126,18 @@ a .cart-icon{
     border-radius: 30px;
 }
 
-.content-main img{
+.banner-main img {
     margin: 30px;
     margin-left: 14%;
 }
 
-.main-products h2{
+.main-products h2 {
     font-family: 'Inter';
     display: flex;
     gap: 10px;
     justify-content: center;
     font-size: 28px;
-    color: rgb(0, 67, 30);
+    color: #2D441D;
 }
 
 .main-products {
@@ -125,7 +150,7 @@ a .cart-icon{
     margin-bottom: 30px;
 }
 
-aside{
+aside {
     font-family: 'Inter';
     color: rgb(179, 0, 0);
     margin-bottom: 20px;
@@ -142,6 +167,12 @@ aside{
 .products-cards {
     background-color: #fff;
     width: 300px;
+    height: 50S0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -154,35 +185,46 @@ aside{
 
 .products-cards img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.card-description {
+    height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-content {
-    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.card-content h3{
+.card-content h3 {
     font-size: 1.2rem;
     margin: 10px 0;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 
 .card-price {
     color: #28a745;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 
 .card-description {
     font-size: 15px;
     color: #555;
     margin-bottom: 15px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 
 .card-content button {
-    background-color: rgb(0, 67, 30);
+    background-color: #2D441D;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -200,80 +242,69 @@ aside{
 
 /*Footer*/
 footer {
-  background-color: rgb(0, 67, 30);
-  color: #fff;
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-around;
-  gap: 30px;
+    background-color: #2D441D;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
 }
 
-footer > div {
-  flex: 1;
-}
-
-.content-footer h1{
-  font-size: 40px;
-  color:rgb(154, 211, 154);
-  margin-top: 8%;
-  padding-left: 10%;
-  font-family: 'Montserrat';
-}
-
-.content-footer address{
-    margin-left: 10%;
+.content-footer h1 {
+    font-size: 40px;
+    color: #C2FF96;
+    margin-top: 8%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .content-footer a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 footer h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: rgb(154, 211, 154);
-  font-family: 'Inter';
-  padding-left: 40%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #C2FF96;
+    font-family: 'Inter';
 }
 
 .links-nav-footer ul,
 .links-nav-footer2 ul {
-  list-style: none;
-  padding-left: 40%;
-  font-family: 'Inter';
+    list-style: none;
+    font-family: 'Inter';
 }
 
 .links-nav-footer li,
 .links-nav-footer2 li {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 footer a {
-  text-decoration: none;
-  color: #ccc;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color:#47980d;
+    color: #47980d;
 }
 
 /*Página do carrinho*/
-.content-cart{
+.content-cart {
     height: 700px;
 }
 
-.content-cart h1{
+.content-cart h1 {
     font-family: 'Inter';
     font-size: 28px;
     margin-left: 5%;
     margin-top: 20px;
-    color: rgb(0, 67, 30);
+    color: #2D441D;
 }
 
-.content-cart .cart-p{
+.content-cart .cart-p {
     font-family: 'Inter';
     background-color: #cfcfcf;
     font-size: 18px;
@@ -281,18 +312,90 @@ footer a:hover {
     padding-left: 5%;
 }
 
-.cart-img{
+.cart-img {
     height: 40%;
     margin-left: 43%;
     margin-top: 8%;
     opacity: 0.2;
 }
 
-.content-cart .adict-cart{
+.content-cart .adict-cart {
     font-family: 'Inter';
     display: flex;
     color: #bcbcbc;
     font-size: 18px;
     margin-top: 10px;
     justify-content: center;
+}
+
+/*Página Sobre Nós*/
+.sobre_nos{
+    background-color: #C2FF96;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nossa_historia h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    margin-left: 5%;
+    padding-top: 20px;
+    color: #2D441D;
+}
+
+.conteudo_sobre h4{
+    font-family: 'Inter', sans-serif;
+}
+
+.conteudo_sobre img{
+    height: 500px;
+}
+
+.conteudo_sobre p{
+    /* background-color: aqua; */
+    font-family: 'Inter', sans-serif;
+    width: 30%;
+}
+
+.conteudo_sobre{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    gap: 40px;
+}
+
+.conteudo_sobre2 h4{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conteudo_sobre2 p{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.conteudo_sobre2 img{
+    height: 500px;
+    margin-top: 6%;
+    margin-left: 40px
+}
+
+.conteudo_sobre2 figcaption{
+    /* background-color: aqua; */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30%;
+}
+
+.conteudo_sobre2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-bottom: 180px;
+    margin-left: 10%;
+    margin-top: 5%;
 }
