@@ -346,16 +346,18 @@ footer a:hover {
 
 .conteudo_sobre h4{
     font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
 
 .conteudo_sobre img{
     height: 500px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.327);
 }
 
-.conteudo_sobre p{
-    /* background-color: aqua; */
+.conteudo_sobre figcaption p{
     font-family: 'Inter', sans-serif;
-    width: 30%;
+    font-size: 20px;
+    width: 40%;
 }
 
 .conteudo_sobre{
@@ -368,34 +370,29 @@ footer a:hover {
 
 .conteudo_sobre2 h4{
     font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.conteudo_sobre2 p{
-    display: flex;
-    flex-direction: row-reverse;
+    font-size: 20px;
 }
 
 .conteudo_sobre2 img{
     height: 500px;
     margin-top: 6%;
-    margin-left: 40px
+    margin-left: 40px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.327);
 }
 
-.conteudo_sobre2 figcaption{
-    /* background-color: aqua; */
+.conteudo_sobre2 figcaption p{
     font-family: 'Inter', sans-serif;
     display: flex;
-    flex-direction: column-reverse;
-    width: 30%;
+    font-size: 20px;
+    align-items: center;
+    width: 40%;
 }
 
 .conteudo_sobre2{
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    padding-bottom: 180px;
-    margin-left: 10%;
+    padding-bottom: 130px;
+    gap: 40px;
+    margin-left: 8%;
     margin-top: 5%;
 }
